@@ -1,0 +1,10 @@
+version: '3.0'
+services:
+  debian:
+    build: .
+    image: ansible-debian:latest
+    volumes:
+      - ./ansible:/ansible
+    ports:
+      - "8888:80"
+
